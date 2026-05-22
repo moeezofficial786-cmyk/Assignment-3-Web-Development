@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  background-color: #0f172a; /* Slate 900 */
+  color: #f8fafc; /* Slate 50 */
+  font-family: system-ui, -apple-system, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.assignment-card {
+  width: 100%;
+  max-width: 440px;
+  background-color: #1e293b; /* Slate 800 */
+  border: 1px solid #334155; /* Slate 700 */
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+}
+
+.assignment-card h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #f8fafc;
+}
+
+.assignment-sub {
+  font-size: 0.9rem;
+  color: #94a3b8; /* Slate 400 */
+  margin-bottom: 1.5rem;
+}
+
+.display-area {
+  min-height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f172a; /* Slate 900 */
+  border: 1px solid #334155;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.countdown-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #38bdf8; /* Sky 400 */
+}
+
+.loading-text {
+  color: #64748b; /* Slate 500 */
+  font-style: italic;
+  font-size: 0.95rem;
+  margin: 0;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+.delayed-component {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.delayed-component h3 {
+  font-size: 1.15rem;
+  color: #38bdf8; /* Sky 400 */;
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
+
+.delayed-component p {
+  font-size: 0.85rem;
+  color: #cbd5e1; /* Slate 300 */
+  line-height: 1.4;
+  margin: 0;
+}
+
+.restart-btn {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #0284c7; /* Sky 600 */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.restart-btn:hover {
+  background-color: #0369a1; /* Sky 700 */
+}
+
+.restart-btn:active {
+  transform: scale(0.98);
+}
